@@ -111,7 +111,7 @@ async def start(_, m: Message):
         await add_served_chat(m.chat.id)
 
 
-@nexichat.on_cmd("help")
+@nexichat.on_cmd("chelp")
 async def help(client: nexichat, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         hmm = await m.reply_photo(
